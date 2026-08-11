@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Aaditya Saraswat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="section contact-section">
+      <div class="contact-card" style="max-width:760px;margin:36px auto;padding:24px;background:var(--card);border-radius:12px;box-shadow:var(--shadow)">
+        <h1>Contact</h1>
+        <p class="muted">Send a short message — saved locally on this demo.</p>
+        <form id="contactForm">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <input name="name" type="text" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid #e6eef8">
+            <input name="email" type="email" placeholder="you@example.com" required style="padding:10px;border-radius:8px;border:1px solid #e6eef8">
+          </div>
+          <div style="margin-top:12px">
+            <textarea name="message" rows="6" placeholder="Your message" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef8"></textarea>
+          </div>
+          <div style="margin-top:12px;display:flex;gap:10px">
+            <button class="btn primary" type="submit">Send</button>
+            <a class="btn outline" href="index.html">Back</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function(){
+      const form = document.getElementById('contactForm');
+      if (!form) return;
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+        if (!name || !email || !message) { alert('Please complete all fields.'); return; }
+        const messages = JSON.parse(localStorage.getItem('contact-messages') || '[]');
+        messages.push({name, email, message, date: new Date().toISOString()});
+        localStorage.setItem('contact-messages', JSON.stringify(messages));
+        alert('Message saved locally. Thank you!');
+        form.reset();
+      });
+    })();
+  </script>
+</body>
+</html>

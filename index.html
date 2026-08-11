@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aaditya Saraswat — Portfolio</title>
+  <meta name="description" content="Portfolio of Aaditya Saraswat — Full-Stack Developer &amp; Machine Learning Enthusiast. Explore skills, projects, certifications, and experience.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-theme">
+
+  <!-- NAVBAR -->
+  <header class="navbar" role="banner">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">&lt;<span class="brand-highlight">AadityaDev</span>/&gt;</a>
+
+      <nav class="nav-menu" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </button>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- FIXED FLOATING SOCIAL SIDEBAR -->
+  <aside class="social-sidebar" aria-label="Social Profiles">
+    <a href="https://github.com/Novice47/" target="_blank" rel="noopener" aria-label="GitHub Profile">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/aaditya-saraswat-676755144/" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://www.instagram.com/adityaa_saraswat" target="_blank" rel="noopener" aria-label="Instagram Profile">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </aside>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text-content">
+          <h1 class="hero-title">
+            Hi, I'm <br><span class="hero-name">Aaditya Saraswat</span>
+          </h1>
+          <h2 class="hero-subtitle">A Developer &amp; ML Enthusiast</h2>
+          <p class="hero-description">
+            Engineering undergraduate passionate about building practical, impactful solutions. Skilled in full-stack web development, Python data libraries, and diving deep into Machine Learning &amp; AI. Let's build something great.
+          </p>
+          <div class="hero-badges">
+            <span class="badge"><i class="fas fa-rocket"></i> Full-Stack Learner</span>
+            <span class="badge"><i class="fas fa-brain"></i> ML &amp; AI Enthusiast</span>
+            <span class="badge"><i class="fas fa-chart-line"></i> Data Science Explorer</span>
+          </div>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn primary-btn"><i class="fas fa-folder-open"></i> View Projects</a>
+            <a href="#contact" class="btn secondary-btn"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-visual-card">
+          <div class="code-card-glow"></div>
+          <div class="code-card">
+            <div class="code-card-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-card-title">aaditya.py</span>
+            </div>
+            <div class="code-card-body">
+              <pre><code><span class="keyword">class</span> <span class="class-name">Aaditya</span>:
+    <span class="keyword">def</span> <span class="func-name">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.goal = <span class="string">"AI"</span>
+        <span class="param">self</span>.lang = <span class="string">"C++"</span>
+    <span class="keyword">def</span> <span class="func-name">build</span>(<span class="param">self</span>):
+        <span class="keyword">return</span> <span class="string">"greatness"</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// SKILLS</span>
+        <h2 class="section-title">What I Know</h2>
+        <p class="section-subtitle">Technologies I actively work with and am currently learning.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-box"><i class="fab fa-html5"></i></div>
+            <span class="prof-score">72%</span>
+          </div>
+          <h3>HTML / CSS</h3>
+          <p>Building responsive, pixel-perfect layouts with semantic HTML and modern CSS techniques.</p>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 72%;"></div></div>
+          <div class="skill-tags">
+            <span>Flexbox</span><span>Grid</span><span>Tailwind</span><span>Responsive</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-box"><i class="fab fa-js"></i></div>
+            <span class="prof-score">62%</span>
+          </div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, async patterns, and interactive UI components with vanilla JS.</p>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 62%;"></div></div>
+          <div class="skill-tags">
+            <span>ES6+</span><span>DOM</span><span>Async/Await</span><span>Fetch API</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-box"><i class="fab fa-react"></i></div>
+            <span class="prof-score">35%</span>
+          </div>
+          <h3>React</h3>
+          <p>Learning React — components, hooks, state management &amp; building SPAs.</p>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 35%;"></div></div>
+          <div class="skill-tags">
+            <span>Components</span><span>Hooks</span><span>useState</span><span>JSX</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-box"><i class="fab fa-python"></i></div>
+            <span class="prof-score">58%</span>
+          </div>
+          <h3>Python</h3>
+          <p>Data analysis with NumPy, Pandas &amp; Matplotlib. Foundation for ML projects.</p>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 58%;"></div></div>
+          <div class="skill-tags">
+            <span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Scripting</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-box"><i class="fas fa-brain"></i></div>
+            <span class="prof-score">40%</span>
+          </div>
+          <h3>Machine Learning</h3>
+          <p>Hands-on ML projects — predictors, recommenders &amp; survival models using scikit-learn.</p>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 40%;"></div></div>
+          <div class="skill-tags">
+            <span>Scikit-learn</span><span>Prediction</span><span>Classification</span><span>EDA</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-box"><i class="fas fa-code"></i></div>
+            <span class="prof-score">55%</span>
+          </div>
+          <h3>C++ (DSA)</h3>
+          <p>Problem solving &amp; data structures — core competitive programming foundations.</p>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 55%;"></div></div>
+          <div class="skill-tags">
+            <span>DSA</span><span>Algorithms</span><span>STL</span><span>Problem Solving</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-box"><i class="fab fa-git-alt"></i></div>
+            <span class="prof-score">50%</span>
+          </div>
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control, branching, commits and collaborating on open-source projects.</p>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 50%;"></div></div>
+          <div class="skill-tags">
+            <span>Branches</span><span>Commits</span><span>PRs</span><span>Repos</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-box"><i class="fas fa-wrench"></i></div>
+            <span class="prof-score">18%</span>
+          </div>
+          <h3>Backend (Learning)</h3>
+          <p>Just started exploring Node.js and backend architecture — building APIs &amp; servers.</p>
+          <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 18%;"></div></div>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Express</span><span>REST</span><span>APIs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// PROJECTS</span>
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Things I've built — from ML models to full web apps.</p>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="project-filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="js">JavaScript</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Blog Writer App -->
+        <article class="project-card" data-category="web">
+          <div class="project-card-header">
+            <div class="project-icon-wrapper"><i class="fas fa-pen-nib"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Novice47/" target="_blank" rel="noopener" aria-label="GitHub Source"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Blog Writer App</h3>
+          <p class="project-subtitle">Full-Stack Content Management &amp; AI Studio</p>
+          <p class="project-desc">
+            Developed a modern blog writing application featuring markdown support, real-time tag management, and Appwrite backend for secure user authentication, draft saving, and post publishing.
+          </p>
+          <div class="project-tech-stack">
+            <span>React</span><span>Tailwind CSS</span><span>Appwrite</span>
+          </div>
+        </article>
+
+        <!-- Project 2: MEHFIL FM -->
+        <article class="project-card" data-category="web js">
+          <div class="project-card-header">
+            <div class="project-icon-wrapper"><i class="fas fa-radio"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Novice47/" target="_blank" rel="noopener" aria-label="GitHub Source"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>MEHFIL FM</h3>
+          <p class="project-subtitle">Vintage Indian Music Streaming Web App</p>
+          <p class="project-desc">
+            Developed a frontend-only vintage radio application featuring dual music modes, local OGG audio playback, interactive playlists, timestamp seeking, shuffle controls, glassmorphism, and animated vinyl player.
+          </p>
+          <div class="project-tech-stack">
+            <span>HTML5</span><span>CSS3</span><span>Vanilla JavaScript</span>
+          </div>
+        </article>
+
+        <!-- Project 3: Footfall Prediction -->
+        <article class="project-card" data-category="ml python">
+          <div class="project-card-header">
+            <div class="project-icon-wrapper"><i class="fas fa-shoe-prints"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Novice47/" target="_blank" rel="noopener" aria-label="GitHub Source"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Footfall Prediction</h3>
+          <p class="project-subtitle">Footfall Prediction System (FootTrack AI)</p>
+          <p class="project-desc">
+            Predicts footfall using mobile data with Machine Learning — trains models on location &amp; time features. Multi-modal ML framework predicting crowd density across 10 UNESCO World Heritage Sites using 13 spatial-temporal features.
+          </p>
+          <div class="project-tech-stack">
+            <span>Python</span><span>Flask</span><span>Gradient Boosting</span><span>Leaflet.js</span>
+          </div>
+        </article>
+
+        <!-- Project 4: Language Learning Vocab App -->
+        <article class="project-card" data-category="web js">
+          <div class="project-card-header">
+            <div class="project-icon-wrapper"><i class="fas fa-language"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Novice47/" target="_blank" rel="noopener" aria-label="GitHub Source"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Language Learning Vocab App</h3>
+          <p class="project-subtitle">Vocabulary &amp; Flashcard Learning</p>
+          <p class="project-desc">
+            A web-based vocabulary learning app with quizzes, flashcards and progress tracking for language enthusiasts.
+          </p>
+          <div class="project-tech-stack">
+            <span>JavaScript</span><span>HTML/CSS</span><span>LocalStorage</span>
+          </div>
+        </article>
+
+        <!-- Project 5: Project Gradient -->
+        <article class="project-card" data-category="web js">
+          <div class="project-card-header">
+            <div class="project-icon-wrapper"><i class="fas fa-palette"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Novice47/" target="_blank" rel="noopener" aria-label="GitHub Source"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Project Gradient</h3>
+          <p class="project-subtitle">Interactive Color &amp; Gradient Studio</p>
+          <p class="project-desc">
+            An interactive gradient generator — pick colours, adjust stops, and copy CSS code instantly.
+          </p>
+          <div class="project-tech-stack">
+            <span>JavaScript</span><span>CSS3</span><span>DOM API</span>
+          </div>
+        </article>
+
+        <!-- Project 6: WeatherNow Weather App -->
+        <article class="project-card" data-category="web">
+          <div class="project-card-header">
+            <div class="project-icon-wrapper"><i class="fas fa-cloud-sun"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Novice47/" target="_blank" rel="noopener" aria-label="GitHub Source"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>WeatherNow</h3>
+          <p class="project-subtitle">Full-Stack Weather App</p>
+          <p class="project-desc">
+            Built a full-stack weather app where React frontend fetches data via a Node.js/Express proxy server, keeping API keys secure. Displays real-time temperature, humidity, wind &amp; 5-day forecast.
+          </p>
+          <div class="project-tech-stack">
+            <span>React</span><span>Node.js</span><span>Express</span><span>OpenWeather API</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+    <section id="certifications" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// CERTIFICATIONS</span>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Credentials &amp; Extracurricular Achievements</p>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-badge-tag"><i class="fas fa-certificate"></i> Certified</div>
+          <h3>AWS Certified Cloud Practitioner</h3>
+          <p class="cert-issuer">Amazon Web Services (AWS)</p>
+          <p class="cert-desc">Validated foundational knowledge of AWS Cloud platform, global infrastructure, security, and core services.</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge-tag"><i class="fas fa-shield-alt"></i> Certified</div>
+          <h3>Palo Alto Networks – CyberSecurity</h3>
+          <p class="cert-issuer">Palo Alto Networks</p>
+          <p class="cert-desc">Completed the Palo Alto Networks cybersecurity certification covering network defence, threat analysis &amp; security best practices.</p>
+          <span class="cert-date"><i class="far fa-calendar-alt"></i> June 6, 2025</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge-tag"><i class="fas fa-award"></i> Certified</div>
+          <h3>Introduction to Machine Learning – Great Learning</h3>
+          <p class="cert-issuer">Great Learning</p>
+          <p class="cert-desc">Hands-on ML course covering supervised &amp; unsupervised learning, model evaluation and real-world project deployment.</p>
+          <span class="cert-date"><i class="far fa-calendar-alt"></i> 2025</span>
+        </div>
+
+        <div class="cert-card extra-card">
+          <div class="cert-badge-tag highlight-tag"><i class="fas fa-users"></i> Extracurricular</div>
+          <h3>DSDL Club Member &amp; Open Source Contributor</h3>
+          <p class="cert-issuer">KIET — Vpaksh Student Organisation &amp; GSSoC 2026</p>
+          <p class="cert-desc">Member of DSDL Club, KIET (June 2025). Open source contributions through GirlScript Summer of Code (GSSoC 2026).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// GET IN TOUCH</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Whether you have a project idea, question, or opportunity!</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info-card">
+          <h3>Contact Details</h3>
+          <p>Feel free to reach out via email. I'm open to freelance work, internships, and project collaborations.</p>
+          
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span>Email</span>
+              <a href="mailto:aadityasaraswat47@gmail.com">aadityasaraswat47@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span>Education / Location</span>
+              <p>KIET Group of Institutions, Delhi-NCR</p>
+            </div>
+          </div>
+
+          <div class="contact-socials-inline">
+            <a href="https://github.com/Novice47/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aaditya-saraswat-676755144/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/adityaa_saraswat" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="contactForm">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="userName">Name</label>
+                <input type="text" id="userName" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="userEmail">Email</label>
+                <input type="email" id="userEmail" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="userMessage">Message</label>
+              <textarea id="userMessage" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn full-width"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Aaditya Saraswat. All rights reserved.</p>
+      <div class="footer-social-links">
+        <a href="https://github.com/Novice47/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/aaditya-saraswat-676755144/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/adityaa_saraswat" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT FOR THEME TOGGLE, MOBILE MENU, FILTERS -->
+  <script>
+    (function() {
+      // Theme Toggle Logic
+      const themeToggleBtn = document.getElementById('themeToggle');
+      const body = document.body;
+
+      // Default theme is light, saved in localStorage
+      const savedTheme = localStorage.getItem('aaditya-portfolio-theme') || 'light';
+      if (savedTheme === 'dark') {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+      } else {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+      }
+
+      themeToggleBtn.addEventListener('click', () => {
+        if (body.classList.contains('light-theme')) {
+          body.classList.remove('light-theme');
+          body.classList.add('dark-theme');
+          localStorage.setItem('aaditya-portfolio-theme', 'dark');
+        } else {
+          body.classList.remove('dark-theme');
+          body.classList.add('light-theme');
+          localStorage.setItem('aaditya-portfolio-theme', 'light');
+        }
+      });
+
+      // Mobile Hamburger Toggle
+      const hamburgerBtn = document.querySelector('.hamburger-btn');
+      const navMenu = document.querySelector('.nav-menu');
+
+      if (hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+        });
+      }
+
+      // Close mobile menu when link is clicked
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+        });
+      });
+
+      // Project Filter Logic
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.getAttribute('data-filter');
+
+          projectCards.forEach(card => {
+            const categories = card.getAttribute('data-category').split(' ');
+            if (filter === 'all' || categories.includes(filter)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Contact Form Handlers
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('userName').value.trim();
+          const email = document.getElementById('userEmail').value.trim();
+          const message = document.getElementById('userMessage').value.trim();
+
+          if (!name || !email || !message) {
+            alert('Please fill out all fields.');
+            return;
+          }
+
+          const existingMsgs = JSON.parse(localStorage.getItem('contact-messages') || '[]');
+          existingMsgs.push({ name, email, message, date: new Date().toISOString() });
+          localStorage.setItem('contact-messages', JSON.stringify(existingMsgs));
+
+          alert(`Thank you, ${name}! Your message has been sent successfully.`);
+          contactForm.reset();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
